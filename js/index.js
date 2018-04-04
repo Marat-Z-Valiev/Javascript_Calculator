@@ -17,7 +17,7 @@ buttons.click(function (e) {
     e.preventDefault();
     const value = $(this).attr('data-key');
     answer.val(value);
-    //Verify if value is number
+    //Verify if value is a number
     //Set a limit for up to 7 digits
     if (!isNaN(value) || value === '.') {
         temp += value;

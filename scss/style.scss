@@ -117,3 +117,28 @@ h1 {
     }
   }
 }
+
+//Responsive design
+@media screen and (max-width: 360px){
+  .calculator-frame{
+    height: 565px;
+    width: 353px;
+
+    .display-block{
+      input{
+        width: 280px;
+        height: 68px;
+      }
+    }
+    .buttons{
+      width: auto;
+      height: auto;
+      grid-gap: 6px;
+      
+      .button{
+        width: 75px;
+        height: 70px;
+      }
+    }
+  }
+}

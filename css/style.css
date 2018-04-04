@@ -139,3 +139,23 @@ h1 {
 .calculator-frame .buttons .equal-button:active {
   background: #f8b807;
 }
+
+@media screen and (max-width: 360px) {
+  .calculator-frame {
+    height: 565px;
+    width: 353px;
+  }
+  .calculator-frame .display-block input {
+    width: 280px;
+    height: 68px;
+  }
+  .calculator-frame .buttons {
+    width: auto;
+    height: auto;
+    grid-gap: 6px;
+  }
+  .calculator-frame .buttons .button {
+    width: 75px;
+    height: 70px;
+  }
+}
