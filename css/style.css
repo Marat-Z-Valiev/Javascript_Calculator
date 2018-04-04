@@ -86,6 +86,7 @@ h1 {
 }
 
 .calculator-frame .buttons .button {
+  outline: none;
   width: 93px;
   height: 67px;
   -ms-flex-item-align: center;

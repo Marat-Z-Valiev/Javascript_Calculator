@@ -68,8 +68,9 @@ h1 {
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(5, 19%);
     margin-top: 20px;
-
+    
     .button{
+      outline: none;
       width: 93px;
       height: 67px;
       align-self: center;
