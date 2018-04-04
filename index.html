@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>JS Calculator</title>
+</head>
+<body>
+  <header>
+    <h1>Javascript Calculator</h1>
+  </header>
+  <main>
+    <div class="main-container">
+      <div class="calculator-frame">
+        <div class="display-block">
+          <input type="text" disabled id="answer" placeholder="0">
+          <div class="buttons">
+            <button id="cancelButton" class="cancel-button button">C</button>
+            <button data-key="7" class="button">7</button>
+            <button data-key="8" class="button">8</button>
+            <button data-key="9" class="button">9</button>
+            <button data-key="/" class="button">÷</button>
+            <button data-key="4" class="button">4</button>
+            <button data-key="5" class="button">5</button>
+            <button data-key="6" class="button">6</button>
+            <button data-key="*" class="button">x</button>
+            <button data-key="1" class="button">1</button>
+            <button data-key="2" class="button">2</button>
+            <button data-key="3" class="button">3</button>
+            <button data-key="-" class="button">-</button>
+            <button data-key="0" class="button">0</button>
+            <button data-key="." class="button">.</button>
+            <button data-key="+" class="button">+</button>
+            <button data-key="=" id="equalButton" class="equal-button button">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/index.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
+//Variables
+$Roboto-font: 'Roboto', cursive, serif;
+$Berkshire-Swash: 'Berkshire Swash', cursive, sans-serif;
+
+body {
+  background: url('../images/bg.jpg') no-repeat fixed center center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.main-container {
+  margin-top: 50px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: $Berkshire-Swash;
+}
+
+.calculator-frame {
+  background-color: #505050;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 40px;
+  display: grid;
+  height: 600px;
+  width: 463px;
+  margin: 0 auto;
+  grid-template-rows: 25%;
+  box-shadow: inset 0px -5px 14px 1px rgba(13,13,13,1);
+
+  .display-block {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    input{
+       font-family: 'Orbitron', cursive, serif;
+       font-size: 70px;
+       text-align: right;
+       background: #f2f6f8;
+       background: linear-gradient(to bottom, #f2f6f8 0%, #d8e1e7 47%, #b5c6d0 51%, #c3d4c2 100%);
+       width: 398px;
+       height: 86px;
+       border-radius: 15px;
+       border: #8c8b8c;
+       margin-top: 30px;
+       padding-right: 10px;
+       box-shadow: 0.1px 0.1px 0.1px 3px #6e7d6e inset;
+      }
+      [type='text'], textarea{
+        color: #000000;
+      }
+      
+      ::placeholder{
+        color: #000000;
+      }
+  }
+
+  .buttons{
+    width: 406px;
+    height: 465px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 19%);
+    margin-top: 20px;
+
+    .button{
+      width: 93px;
+      height: 67px;
+      align-self: center;
+      justify-self: center;
+      border-radius: 14px;
+      border: 0px;
+      box-shadow: inset 1px -6px 15px -8px rgba(13,13,13,1);
+      box-shadow: 0px 4px 0px 0px rgba(0,0,0,1);
+      background: #f2f6f8;
+      background: linear-gradient(to bottom, #f2f6f8 0%, #d8e1e7 36%, #b5c6d0 59%, #e0eff9 100%);
+      font-family: $Roboto-font;
+      font-weight: bold;
+      font-size: 2em;
+
+      &:hover{
+        cursor: pointer;
+      }
+
+      &:active{
+      background: #b7c8d1;
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+      transform: translateY(4px);
+      }
+    }
+
+    .cancel-button{
+      grid-column: 1/5;
+      justify-self: end;
+      margin-right: 5px;
+      background: #f85032;
+      background: linear-gradient(to bottom, #f85032 0%, #f16f5c 53%, #f6290c 70%, #f02f17 76%, #e73827 100%);
+
+      &:active{
+        background: #ef3018;
+      }
+    }
+
+    .equal-button{
+      background-color: #f8b250;
+      background: linear-gradient(to bottom, #fceabb 0%, #fccd4d 46%, #f8b500 67%, #f8b250 100%);
+
+      &:active{
+        background: #f8b807;
+      }
+    }
+  }
+}
