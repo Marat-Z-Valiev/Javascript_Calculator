@@ -153,7 +153,11 @@ h1 {
   .calculator-frame .buttons {
     width: auto;
     height: auto;
-    grid-gap: 6px;
+    grid-gap: 4px;
+    margin-right: 10px;
+  }
+  .calculator-frame .buttons .cancel-button {
+    margin-right: 0px;
   }
   .calculator-frame .buttons .button {
     width: 75px;

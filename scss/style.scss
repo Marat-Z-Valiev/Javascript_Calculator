@@ -134,7 +134,12 @@ h1 {
     .buttons{
       width: auto;
       height: auto;
-      grid-gap: 6px;
+      grid-gap: 4px;
+      margin-right: 10px;
+
+      .cancel-button{
+        margin-right: 0px;
+      }
       
       .button{
         width: 75px;
