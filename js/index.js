@@ -21,7 +21,7 @@ buttons.click(function (e) {
     //Set a limit for up to 7 digits
     if (!isNaN(value) || value === '.') {
         temp += value;
-        answer.val(temp.substring(0, 7));
+        answer.val(temp.substring(0, 10));
     }
     //Start calculation when equal button is clicked
     else if (value === '=') {
@@ -59,8 +59,7 @@ buttons.click(function (e) {
         if (!cancelEntry()) {
             entries.push(result);
             answer.val(result);
-            console.log(result);
-        } 
+        }
         else {
             cancelEntry();
         }
