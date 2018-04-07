@@ -42,19 +42,12 @@ buttons.click(function (e) {
                 result /= nextNum;
             }
             i++;
-        }
-        //Verify if value is integer and if not display only 3 digits after the decimal
-        if (!Number.isInteger(result)) {
-            result = result.toFixed(3);
+            result = String(result).substring(0, 10);
         }
         //Add minus symbol if value is negative
         if (result < 0) {
             result = '-' + Math.abs(result);
         }
-        //Slice value if it contains more than 7 digits to fit in the field
-        // if (result.toString().length > 7) {
-        //     answer.val(result.toString().substring(0, 7));
-        // }
         //Store the result in array to continue calculations 
         if (!cancelEntry()) {
             entries.push(result);
