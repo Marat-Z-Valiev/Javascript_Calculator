@@ -18,7 +18,7 @@ buttons.click(function (e) {
     const value = $(this).attr('data-key');
     answer.val(value);
     //Verify if value is a number
-    //Set a limit for up to 7 digits
+    //Set a limit for up to 10 digits
     if (!isNaN(value) || value === '.') {
         temp += value;
         answer.val(temp.substring(0, 10));
@@ -52,9 +52,9 @@ buttons.click(function (e) {
             result = '-' + Math.abs(result);
         }
         //Slice value if it contains more than 7 digits to fit in the field
-        if (result.toString().length > 7) {
-            answer.val(result.toString().substring(0, 7));
-        }
+        // if (result.toString().length > 7) {
+        //     answer.val(result.toString().substring(0, 7));
+        // }
         //Store the result in array to continue calculations 
         if (!cancelEntry()) {
             entries.push(result);
