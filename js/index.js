@@ -18,7 +18,7 @@ buttons.click(function (e) {
     const value = $(this).attr('data-key');
     answer.val(value);
     //Verify if value is a number
-    //Set a limit for up to 10 digits
+    //Set a limit for entering up to 10 digits
     if (!isNaN(value) || value === '.') {
         temp += value;
         answer.val(temp.substring(0, 10));
@@ -42,7 +42,7 @@ buttons.click(function (e) {
                 result /= nextNum;
             }
             i++;
-            result = String(result).substring(0, 10);
+            result;
         }
         //Add minus symbol if value is negative
         if (result < 0) {
